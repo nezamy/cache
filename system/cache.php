@@ -19,7 +19,7 @@ class Cache
     public function __construct(array $conf = [])
     {
         $this->config = array_merge([
-            'path'      => 'cache/'
+            'path'      => 'storage/cache'
         ], $conf);
     }
 
