@@ -90,7 +90,7 @@ class Cache
 
 		$fs = new FileSystem;
 
-		$cacheFile = $cachePath . DS . $this->prepare($key) . $this->ext;
+		$cacheFile = $cachePath . DIRECTORY_SEPARATOR . $this->prepare($key) . $this->ext;
 
 		$return = new \stdClass;
 
@@ -114,6 +114,6 @@ class Cache
 	 */
 	private function prepare($key)
 	{
-		return str_replace('.', DS, str_replace($this->ext, '', $key) );
+		return str_replace('.', DIRECTORY_SEPARATOR, str_replace($this->ext, '', $key) );
 	}
 }
