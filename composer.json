@@ -21,6 +21,5 @@
         "psr-4": {
             "System\\": "system"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
